@@ -14,20 +14,25 @@
   </head>
   <body>
     <header>
-      <h1>Vue Lists and Conditional Content</h1>
+      <h1> Vue JS User Task </h1>
     </header>
-    <section id="assignment">
-      <h2>Assignment</h2>
+    <section id="task">
+      <h2> LIST OF USER TASKS </h2>
       <!-- 1) Add code to manage a list of tasks in a Vue app -->
-      <!-- When clicking "Add Task" a new task with the entered text should be added -->
-      <input type="text">
-      <button>Add Task</button>
-      <ul>
+      <!-- When clicking "Ad
+        d Task" a new task  with the entered text should be added -->
+      <input type="text" v-model="enteredtaskValue"/>
+      <button @click="add_task">Add Task</button>
+        <p v-if= "task.length===0"><b>No task has been added. Please add one!</b></p>
+      <ul v-else v-show ="btntoggle === false"> 
+        <li v-for="task in task">{{task}}</li>
+        
         <!-- 2) Output the list of tasks here -->
       </ul>
       <!-- 3) When the below button is pressed, the list should be shown or hidden -->
       <!-- BONUS: Also update the button caption -->
-      <button>Hide / Show List</button>
+    <br>
+      <button @click="btn_toggle">{{toggler}}</button>
     </section>
   </body>
 </html>
