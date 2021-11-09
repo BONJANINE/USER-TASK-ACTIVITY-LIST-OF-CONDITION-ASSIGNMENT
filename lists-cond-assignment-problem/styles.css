@@ -8,73 +8,85 @@ html {
 
 body {
   margin: 0;
+  
 }
 
 header {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 8px rgba(43, 160, 218, 0.26);
   margin: 3rem;
   border-radius: 10px;
   padding: 1rem;
-  background-color: #1b995e;
-  color: white;
+  background-color: black;
+  color:yellowgreen;
   text-align: center;
 }
 
-#assignment {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+#task {
+  box-shadow:navy;
   margin: 3rem;
   border-radius: 10px;
-  padding: 1rem;
+  padding:1rem;
+  background-color: gray;
   text-align: center;
 }
+p {
+  text-align: center;
+  color:#c7fc08;
+  text-decoration-color: aquamarine;
+}
 
-#assignment h2 {
+
+
+ h2 {
   font-size: 2rem;
-  border-bottom: 4px solid #ccc;
-  color: #1b995e;
+  border-bottom: 8px solid #ccc;
+  color: black;
   margin: 0 0 1rem 0;
 }
 
-#assignment ul {
+ul {
   list-style: none;
   margin: 1rem 0;
   padding: 0;
+  text-decoration:red;
 }
 
-#assignment li {
+#task li {
   margin: 1rem 0;
   font-size: 1.25rem;
   font-weight: bold;
-  background-color: #8ddba4;
+  background-color:rgb(11, 247, 219);
   padding: 0.5rem;
-  color: #1f1f1f;
+  color: black;
   border-radius: 25px;
 }
 
-#assignment input {
+#task input {
   font: inherit;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(250, 9, 9);
 }
 
-#assignment input:focus {
+#task input:focus {
   outline: none;
-  border-color: #1b995e;
-  background-color: #d7fdeb;
+  border-color: yellowgreen;
+  background-color: rgb(236, 28, 233);
+  color: rgb(16, 17, 15);
 }
 
-#assignment button {
+#task button {
   font: inherit;
   cursor: pointer;
   border: 1px solid #ff0077;
-  background-color: #ff0077;
-  color: white;
+  background-color: black;
+  color: yellowgreen;
   padding: 0.05rem 1rem;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+  box-shadow: 1px 1px 2px rgba(12, 5, 5, 0.986);
 }
 
-#assignment button:hover,
-#assignment button:active {
-  background-color: #ec3169;
-  border-color: #ec3169;
+#task button:hover,
+#task button:active {
+  background-color: rgb(236, 240, 3);
+  border-color: black;
+  color: black;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
 }
